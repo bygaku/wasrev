@@ -39,3 +39,11 @@
 
 # debug information files
 *.dwo
+
+# directory
+out/
+bin/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+.idea/
