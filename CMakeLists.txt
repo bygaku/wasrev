@@ -44,11 +44,7 @@ target_compile_definitions(${EXE_NAME}
 )
 
 #add sources to target.
-target_sources(${EXE_NAME}
-        PRIVATE
-        ./src/PluginEditor.cpp
-        ./src/PluginProcessor.cpp
-)
+add_subdirectory(src)
 
 target_link_libraries(${EXE_NAME}
         PRIVATE
@@ -56,7 +52,8 @@ target_link_libraries(${EXE_NAME}
         PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
-        juce::juce_recommended_warning_flags)
+        juce::juce_recommended_warning_flags
+)
 
 target_include_directories(${EXE_NAME}
     PUBLIC
