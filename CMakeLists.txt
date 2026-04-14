@@ -44,11 +44,7 @@ target_compile_definitions(${EXE_NAME}
 )
 
 #add sources to target.
-target_sources(${EXE_NAME}
-        PRIVATE
-        ./src/PluginEditor.cpp
-        ./src/PluginProcessor.cpp
-)
+add_subdirectory(src)
 
 target_link_libraries(${EXE_NAME}
         PRIVATE
