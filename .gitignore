@@ -42,7 +42,6 @@
 
 # directory
 out/
-bin/
 [Bb]uild/
 [Rr]elease/
 [Dd]ebug/
